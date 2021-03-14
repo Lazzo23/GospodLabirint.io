@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gospod Labirint</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" href="slike/icon.png">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="fade-in">
+    <div class="container">
+      <div id="particle-container">
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
+        <div class="particle"s></div><div class="particle"></div>
+    </div>
+      <img class="slika" src="slike/slika1.png">
+      <h1 class="naslov">GOSPOD LABIRINT</h1>
+
+	    <form id="nastavitve" action="">
+        <p>VELIKOST LABIRINTA</p>
+        <input id="velikost" type="number" value="400" min="100" max="600"/></br>
+
+        <p>VRSTICE/STOLPCI</p>
+        <input id="stolvrst" type="number" value="20" min="5" max="50"/></br>
+
+        <p>TEŽAVNOST</p>
+        <input id="tezavnost" type="number" value="1" min="1" max="3"/></br>
+
+        <input id="submit" type="submit" value="GENERIRAJ"></br>
+      </form>
+
+      <div class="time" id="display">00:00:00</div>
+  </div>
+  <canvas id="c" class="labirint"></canvas>
+  
+  <script src="js/labirint.js"></script>
+	<script src="js/nastavitve.js"></script>
+  </body>
+</html>
